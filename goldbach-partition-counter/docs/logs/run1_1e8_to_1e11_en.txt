@@ -1,0 +1,235 @@
+F:\anaconda3\python.exe "I:/Goldbach Partition Counter/Goldbach Partition Counter2.py" 
+🎯 Goldbach Partition Counter
+======================================================================
+📊 Planning to calculate 4 ranges:
+  Range 1: S0=0 → S2=50000000
+         Actual even range: 2 to 100000000 (total 50000000)
+  Range 2: S0=499900000 → S2=500000000
+         Actual even range: 999800002 to 1000000000 (total 100000)
+  Range 3: S0=4999900000 → S2=5000000000
+         Actual even range: 9999800002 to 10000000000 (total 100000)
+  Range 4: S0=49999900000 → S2=50000000000
+         Actual even range: 99999800002 to 100000000000 (total 100000)
+
+⚙️  Current Configuration:
+  BLOCK_SIZE = 25,000,000,000
+  BATCH_SIZE = 100,000
+  NUM_GROUPS = 30
+  NUM_EXTRACT_THREADS = 30
+
+
+🚀 Starting calculation for range 1/4
+📊 Current Parameters:
+  Start index S0 = 0
+  End index S2 = 50000000
+  Actual even range: 2 to 100000000
+  Calculation count: 50000000 consecutive even numbers
+🚀 Starting Goldbach partition number calculation
+  S0=0, S2=50,000,000
+======================================================================
+📊 Step 1: Generate base primes...
+🔢 Generating base primes up to 10,000,000...
+  ✅ Generated 664578 base primes
+  ✅ Base primes generation complete, time: 0 sec
+
+📊 Step 2: Calculate global parameters...
+  Target even number range: 50000000 numbers (3 to 50000000)
+  Frontend max index ii_max: 24999998
+  Backend min index jj_min: 0
+
+🎯 Step 3: Calculate processing range...
+  Estimated frontend blocks to process: 1 to 1
+  ✅ Initialized partition array: 50000000 even numbers
+
+
+🔍 Block 1 frontend sieving in progress...
+Sieving started...✅ Sieving complete! Time: 6.360 sec, frontend index: 0—24999994
+🔍 Block 1 backend sieving in progress...
+Sieving started...✅ Sieving complete! Time: 0.017 sec, backend index: 0—49999997
+      🔄 Block progress: 43.4% | Batch: 217/500 (98.4%) | Elapsed: 10 min 34 sec | ETA: 13 min 47 sec    ✅ Block 1 complete, time: 10 min 47 sec
+      🔄 Block progress: 66.4% | Batch: 332/500 (95.4%) | Elapsed: 10 min 34 sec | ETA: 5 min 21 sec
+💾 Results saved to: results/goldbach_partition_counts_0_50000000.npy
+      🔄 Block progress: 89.2% | Batch: 446/500 (94.6%) | Elapsed: 10 min 31 sec | ETA: 1 min 17 sec
+🎉 Calculation complete!
+======================================================================
+📊 Final Statistics:
+  Processed even numbers: 50000000
+  Total partitions: 8804091976100
+  Even numbers with partitions: 49999999
+  Average partitions: 176081.84
+  Minimum partitions: 0
+  Maximum partitions: 931793
+  Total time: 10 min 50 sec
+
+⏱️  Detailed Time Analysis:
+  Blocks processed: 1
+  Average block time: 10 min 47 sec
+  Fastest block: 10 min 47 sec
+  Slowest block: 10 min 47 sec
+  Block efficiency: 5.54 blocks/hour
+  Average partitions (nonzero): 176081.84
+
+✅ Range 1 calculation successful!
+
+🚀 Starting calculation for range 2/4
+📊 Current Parameters:
+  Start index S0 = 499900000
+  End index S2 = 500000000
+  Actual even range: 999800002 to 1000000000
+  Calculation count: 100000 consecutive even numbers
+🚀 Starting Goldbach partition number calculation
+  S0=499,900,000, S2=500,000,000
+======================================================================
+📊 Step 1: Generate base primes...
+🔢 Generating base primes up to 10,000,000...
+      🔄 Block progress: 99.6% | Batch: 498/500 (95.3%) | Elapsed: 10 min 30 sec | ETA: 3 sec  ✅ Generated 664578 base primes
+  ✅ Base primes generation complete, time: 0 sec
+
+📊 Step 2: Calculate global parameters...
+  Target even number range: 100000 numbers (499900001 to 500000000)
+  Frontend max index ii_max: 249999998
+  Backend min index jj_min: 249949998
+
+🎯 Step 3: Calculate processing range...
+  Estimated frontend blocks to process: 1 to 1
+  ✅ Initialized partition array: 100000 even numbers
+
+
+🔍 Block 1 frontend sieving in progress...
+      🔄 Block progress: 55.2% | Batch: 276/500 (96.0%) | Elapsed: 10 min 35 sec | ETA: 8 min 35 sec✅ Sieving complete! Time: 0.087 sec, frontend index: 0—249999995
+🔍 Block 1 backend sieving in progress...
+      🔄 Block progress: 59.4% | Batch: 297/500 (97.8%) | Elapsed: 10 min 35 sec | ETA: 7 min 14 sec✅ Sieving complete! Time: 0.097 sec, backend index: 249900003—499999997
+      🔄 Block progress: 14.6% | Batch: 73/500 (90.8%) | Elapsed: 10 min 57 sec | ETA: 1 hour 4 min    ✅ Block 1 complete, time: 18 sec
+      🔄 Block progress: 9.6% | Batch: 48/500 (89.4%) | Elapsed: 10 min 58 sec | ETA: 1 hour 43 min
+💾 Results saved to: results/goldbach_partition_counts_499900000_500000000.npy
+
+🎉 Calculation complete!
+======================================================================
+📊 Final Statistics:
+  Processed even numbers: 100000
+  Total partitions: 258061302293
+  Even numbers with partitions: 100000
+  Average partitions: 2580613.02
+  Minimum partitions: 1700413
+  Maximum partitions: 6945267
+  Total time: 19 sec
+
+⏱️  Detailed Time Analysis:
+  Blocks processed: 1
+  Average block time: 18 sec
+  Fastest block: 18 sec
+  Slowest block: 18 sec
+  Block efficiency: 194.57 blocks/hour
+  Average partitions (nonzero): 2580613.02
+
+✅ Range 2 calculation successful!
+
+🚀 Starting calculation for range 3/4
+📊 Current Parameters:
+  Start index S0 = 4999900000
+  End index S2 = 5000000000
+  Actual even range: 9999800002 to 10000000000
+  Calculation count: 100000 consecutive even numbers
+🚀 Starting Goldbach partition number calculation
+  S0=4,999,900,000, S2=5,000,000,000
+======================================================================
+📊 Step 1: Generate base primes...
+🔢 Generating base primes up to 10,000,000...
+      🔄 Block progress: 30.8% | Batch: 154/500 (90.5%) | Elapsed: 10 min 56 sec | ETA: 24 min 35 sec  ✅ Generated 664578 base primes
+  ✅ Base primes generation complete, time: 0 sec
+
+📊 Step 2: Calculate global parameters...
+      🔄 Block progress: 21.8% | Batch: 109/500 (83.3%) | Elapsed: 10 min 57 sec | ETA: 39 min 21 sec  Target even number range: 100000 numbers (4999900001 to 5000000000)
+  Frontend max index ii_max: 2499999998
+  Backend min index jj_min: 2499949998
+
+🎯 Step 3: Calculate processing range...
+  Estimated frontend blocks to process: 1 to 1
+  ✅ Initialized partition array: 100000 even numbers
+
+
+🔍 Block 1 frontend sieving in progress...
+      🔄 Block progress: 31.8% | Batch: 159/500 (87.8%) | Elapsed: 10 min 57 sec | ETA: 23 min 30 sec✅ Sieving complete! Time: 0.890 sec, frontend index: 0—2499999967
+🔍 Block 1 backend sieving in progress...
+      🔄 Block progress: 93.8% | Batch: 469/500 (95.5%) | Elapsed: 10 min 51 sec | ETA: 43 sec✅ Sieving complete! Time: 0.938 sec, backend index: 2499900031—4999999997
+      🔄 Block progress: 47.4% | Batch: 237/500 (90.6%) | Elapsed: 13 min 17 sec | ETA: 14 min 45 sec    ✅ Block 1 complete, time: 2 min 23 sec
+      🔄 Block progress: 8.1% | Batch: 41/500 (51.8%) | Elapsed: 13 min 21 sec | ETA: 2 hour 31 min
+💾 Results saved to: results/goldbach_partition_counts_4999900000_5000000000.npy
+
+🎉 Calculation complete!
+======================================================================
+📊 Final Statistics:
+  Processed even numbers: 100000
+  Total partitions: 2067765005068
+  Even numbers with partitions: 100000
+  Average partitions: 20677650.05
+  Minimum partitions: 13642231
+  Maximum partitions: 59206649
+  Total time: 2 min 23 sec
+
+⏱️  Detailed Time Analysis:
+  Blocks processed: 1
+  Average block time: 2 min 23 sec
+  Fastest block: 2 min 23 sec
+  Slowest block: 2 min 23 sec
+  Block efficiency: 25.13 blocks/hour
+  Average partitions (nonzero): 20677650.05
+
+✅ Range 3 calculation successful!
+
+🚀 Starting calculation for range 4/4
+📊 Current Parameters:
+  Start index S0 = 49999900000
+  End index S2 = 50000000000
+  Actual even range: 99999800002 to 100000000000
+  Calculation count: 100000 consecutive even numbers
+🚀 Starting Goldbach partition number calculation
+  S0=49,999,900,000, S2=50,000,000,000
+======================================================================
+📊 Step 1: Generate base primes...
+🔢 Generating base primes up to 10,000,000...
+      🔄 Block progress: 19.4% | Batch: 97/500 (92.9%) | Elapsed: 13 min 20 sec | ETA: 55 min 28 sec  ✅ Generated 664578 base primes
+  ✅ Base primes generation complete, time: 0 sec
+
+📊 Step 2: Calculate global parameters...
+  Target even number range: 100000 numbers (49999900001 to 50000000000)
+  Frontend max index ii_max: 24999999998
+  Backend min index jj_min: 24999949998
+
+🎯 Step 3: Calculate processing range...
+  Estimated frontend blocks to process: 1 to 1
+  ✅ Initialized partition array: 100000 even numbers
+
+
+🔍 Block 1 frontend sieving in progress...
+      🔄 Block progress: 81.6% | Batch: 408/500 (96.8%) | Elapsed: 13 min 22 sec | ETA: 3 min 1 sec✅ Sieving complete! Time: 8.435 sec, frontend index: 0—24999999982
+      🔄 Block progress: 54.0% | Batch: 270/500 (98.0%) | Elapsed: 13 min 25 sec | ETA: 11 min 26 sec
+      🔄 Block progress: 77.8% | Batch: 389/500 (94.9%) | Elapsed: 13 min 31 sec | ETA: 3 min 51 sec✅ Sieving complete! Time: 8.891 sec, backend index: 24999900016—49999999997
+📊 Overall progress: 0.0% (0/1) | Block 1 running: Elapsed 19 min 49 sec, ETA Calculating...    ✅ Block 1 complete, time: 19 min 50 sec
+      🔄 Block progress: 3.0% | Batch: 16/500 (0.0%) | Elapsed: 33 min 13 sec | ETA: 17 hour 53 min
+💾 Results saved to: results/goldbach_partition_counts_49999900000_50000000000.npy
+
+🎉 Calculation complete!
+======================================================================
+📊 Final Statistics:
+  Processed even numbers: 100000
+  Total partitions: 16938711667770
+  Even numbers with partitions: 100000
+  Average partitions: 169387116.68
+  Minimum partitions: 111800676
+  Maximum partitions: 473687623
+  Total time: 19 min 51 sec
+
+⏱️  Detailed Time Analysis:
+  Blocks processed: 1
+  Average block time: 19 min 50 sec
+  Fastest block: 19 min 50 sec
+  Slowest block: 19 min 50 sec
+  Block efficiency: 3.02 blocks/hour
+  Average partitions (nonzero): 169387116.68
+
+✅ Range 4 calculation successful!
+
+🎉 All ranges calculation complete!
+
+进程已结束,退出代码0
