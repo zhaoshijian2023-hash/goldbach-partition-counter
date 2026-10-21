@@ -10,23 +10,17 @@
 ## 中文
 
 ### 项目简介
-
 对给定区间内的每一个偶数 N，本程序精确计算其哥德巴赫分拆数
-
 > r(N) = #{ (p, q) : p ≤ q，p + q = N，p、q 均为素数 }
-
 即把 N 写成两个素数之和的方法数（不计顺序，p = q 算一种）。这一定义与 OEIS [A045917](https://oeis.org/A045917) 一致。
-
-程序采用分段埃氏筛 + Numba 编译的配对计数，可在单台工作站上处理 10¹⁴ 量级的偶数区间。仓库同时公开了 **6 个区间、共 50,410,000 个偶数**的精确分拆数和完整运行日志。
+程序采用**双块配对流式**分段埃氏筛 + Numba 编译配对计数，可在普通PC上处理 10¹⁴ 量级的偶数区间。仓库公开 **6 个区间、共 50,410,000 个偶数**的精确分拆数和完整运行日志。
 
 ### 为什么需要精确值
-
-现有公开数据（如 Oliveira e Silva 等人到 4×10¹⁸ 的验证）回答的是"分拆是否存在"；而分拆数 r(N) 本身在 10¹³–10¹⁴ 量级的精确取值，目前没有可直接下载、可复现的数据集。本仓库提供：
-
-- 一个经过多项一致性检验的精确计算程序；
-- 从 2 到 10⁸ 的全部 5×10⁷ 个偶数的分拆数（即 A045917 的前 5×10⁷ 项）；
-- 10⁹、10¹⁰、10¹¹、10¹³ 末端各 100,000 个偶数、10¹⁴ 末端 10,000 个偶数的分拆数；
-- 全部原始运行日志。
+现有公开数据（如 Oliveira e Silva 等人到 4×10¹⁸ 的验证）仅确认分拆**存在**；10¹³–10¹⁴ 区间可直接下载、可复现的 r(N) 精确值目前暂无其他来源。本仓库提供：
+- 2 到 10⁸ 的全部 5×10⁷ 个偶数的 r(N)（A045917 的前 5×10⁷ 项）；
+- 2～10¹⁰（100亿）区间已完成全量偶数分拆计算；完整数据集因文件体量过大，未上传至仓库；
+- 10⁹、10¹⁰、10¹¹、10¹³ 区间末端各 100,000 个偶数，以及 10¹⁴ 区间末端 10,000 个偶数的抽样数据；
+- 原始未修改运行日志。
 
 这些数据可作为任何分拆数渐近公式、估算方法或统计研究的真实值基准。
 
@@ -194,21 +188,15 @@ LICENSE MIT 许可证
 ## English
 
 ### Overview
-
 For every even integer N in a user-specified interval, this program computes the exact Goldbach partition number
-
 > r(N) = #{ (p, q) : p ≤ q, p + q = N, p and q prime },
-
 the number of unordered representations of N as a sum of two primes (p = q counted once), the same convention as OEIS [A045917](https://oeis.org/A045917).
-
-A segmented sieve of Eratosthenes feeds Numba-compiled pair counting, allowing a consumer PC to work at the 10¹⁴ scale. Exact values for **six intervals, 50,410,000 even integers in total**, are released together with the complete run logs.
-
+A **dual-block paired streaming** segmented sieve of Eratosthenes feeds Numba-compiled pair counting, allowing a consumer PC to work at the 10¹⁴ scale. Exact values for **six intervals, 50,410,000 even integers in total**, are released together with the complete run logs.
 
 ### Why exact values
-
 Public data such as the verification to 4×10¹⁸ by Oliveira e Silva et al. establish that partitions *exist*. Downloadable, reproducible exact values of r(N) itself at 10¹³–10¹⁴ are not otherwise available. This repository provides
-
 - all 5×10⁷ values of r(N) for 2 ≤ N ≤ 10⁸ (the first 5×10⁷ terms of A045917);
+- full computation of partition counts for all even numbers in the range \(2 \sim 10^{10}\) (10 billion) has been completed; the complete dataset is not uploaded to the repository owing to its large file size;
 - 100,000 values each at the top of 10⁹, 10¹⁰, 10¹¹ and 10¹³, and 10,000 values at the top of 10¹⁴;
 - the unedited run logs.
 
