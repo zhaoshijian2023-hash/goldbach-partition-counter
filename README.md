@@ -7,6 +7,24 @@
 
 ---
 
+## 📌 学术认可 / Academic Recognition
+
+本项目已获得**整型序列百科全书 (OEIS)**
+ 官方审核与收录 [1]。
+本项目已作为永久外部参考链接，正式挂载于 **[OEIS A045917](https://oeis.org/A045917)**
+（哥德巴赫分拆数）官方页面 [1]：
+
+> **"Zhao Shijian, Goldbach Partition Counter, 2026"** [1]
+
+### ✉️ OEIS 官方来信 / Correspondence
+> *"I have attached a link to your repository to A045917. ... By providing the link, we allow interested people to follow your work."*
+> — **Sean A. Irvine**, Executive Editor of the OEIS (on behalf of **Neil J. A. Sloane**, President of the OEIS Foundation)
+>
+> *“我已将你的仓库链接附在 A045917 页面。……通过提供链接，我们允许感兴趣的人继续关注你的工作。”*
+> — **肖恩·A·欧文**，OEIS 执行编辑（代表 OEIS 基金会主席 **尼尔·J·A·斯隆**）
+
+---
+
 ## 中文
 
 ### 项目简介
