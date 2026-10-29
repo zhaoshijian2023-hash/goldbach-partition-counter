@@ -7,14 +7,17 @@
 
 ---
 
-## 📌 学术认可 / Academic Recognition
+### 中文
+本项目已获得**整型序列百科全书 (OEIS)** 官方审核与收录。
+本项目已作为永久外部参考链接，正式挂载于 **[OEIS A045917](https://oeis.org/A045917)**（哥德巴赫分拆数）官方页面：
 
-本项目已获得**整型序列百科全书 (OEIS)**
- 官方审核与收录 [1]。
-本项目已作为永久外部参考链接，正式挂载于 **[OEIS A045917](https://oeis.org/A045917)**
-（哥德巴赫分拆数）官方页面 [1]：
+> **"Zhao Shijian, Goldbach Partition Counter, 2026"**
 
-> **"Zhao Shijian, Goldbach Partition Counter, 2026"** [1]
+### English
+This project has been officially reviewed and accepted by the **Online Encyclopedia of Integer Sequences (OEIS)**.
+It has been officially listed as a permanent external link on the official page of **[OEIS A045917](https://oeis.org/A045917)** (Goldbach partitions):
+
+> **"Zhao Shijian, Goldbach Partition Counter, 2026"**
 
 ### ✉️ OEIS 官方来信 / Correspondence
 > *"I have attached a link to your repository to A045917. ... By providing the link, we allow interested people to follow your work."*
