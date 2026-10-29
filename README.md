@@ -6,6 +6,7 @@
 [中文](#中文) | [English](#english)
 
 ---
+## 📌 学术认可 / Academic Recognition
 
 ### 中文
 本项目已获得**整型序列百科全书 (OEIS)** 官方审核与收录。
